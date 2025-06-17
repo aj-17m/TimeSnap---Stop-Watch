@@ -1,0 +1,123 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #333;
+    box-sizing: border-box;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.stopwatch {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+#display {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    word-wrap: break-word;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s, border-color 0.3s;
+    flex: 1 1 40%;
+    max-width: 120px;
+}
+
+button:hover {
+    background: #e0e0e0;
+    border-color: #bbb;
+}
+
+.laps {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.laps h2 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+#lapsList {
+    list-style-type: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#lapsList li {
+    background: #f9f9f9;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: #333;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+}
+
+/* Media Query for Small Devices */
+@media (max-width: 500px) {
+    #display {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+        max-width: 100px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .laps h2 {
+        font-size: 1rem;
+    }
+}
