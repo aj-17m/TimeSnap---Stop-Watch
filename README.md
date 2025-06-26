@@ -16,7 +16,7 @@
 
 ---
 
-## 🚀 Introduction
+## 🚀 Introduction :-
 
 Welcome to the **Stopwatch Web Application** — a sleek, modern, and interactive stopwatch built using **HTML**, **CSS**, and **JavaScript**.
 
